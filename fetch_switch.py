@@ -73,6 +73,6 @@ get_device_list(user, password)
 df = pd.DataFrame(inventory)
 
 # Export the inventory to a CSV file
-df.to_csv("C:/Users/matthewchs/Downloads/SwitchInventoryPython.csv", index=False)
+df.to_csv("C:/Users/matthewchs/Downloads/SwitchInventory.csv", index=False)
 
 print("Inventory exported to CSV file.")
