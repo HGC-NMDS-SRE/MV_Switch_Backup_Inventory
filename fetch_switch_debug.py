@@ -49,7 +49,7 @@ def get_device_list(user, password):
         print("Sending POST request to login...")
         login_response = session.post("https://mtlhksvrpise.macroviewhk.com/admin/LoginAction.do", data=login_data, verify=False)
         print("Login response status code:", login_response.status_code)
-
+        print("Login response content:", login_response.text)
         print("Cookies after login:", session.cookies)
 
         # Adding a delay to avoid rate limiting
